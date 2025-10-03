@@ -22,7 +22,7 @@ export default function StayInformed() {
                         Stay Informed
                     </h2>
                     <p className="text-gray-900 text-4xl font-bold max-w-5xl leading-tight">
-                        Through advocacy, education, and support, we're building a stigma-free future for mental health in Nigeria.
+                        Through advocacy, education, and support, we&apos;re building a stigma-free future for mental health in Nigeria.
                     </p>
                 </motion.div>
 
