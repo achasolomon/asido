@@ -5,11 +5,11 @@
 import { motion } from "framer-motion";
 import { useInView } from "@/hooks/useInView";
 
-// interface TimelineNodeProps {
-//   year: number;
-// }
+interface TimelineNodeProps {
+  year: number;
+}
 
-export default function TimelineNode() {
+export default function TimelineNode({ year }: TimelineNodeProps) {
   const { ref, isInView } = useInView({ 
     threshold: 0.5, 
     triggerOnce: false 

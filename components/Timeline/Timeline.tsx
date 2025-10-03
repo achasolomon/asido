@@ -5,7 +5,7 @@
 import { useMemo } from "react";
 import { Milestone as MilestoneType } from "@/types/milestones";
 import Milestone from "./MileStone";
-// import TimelineNode from "./TimelineNode";
+import TimelineNode from "./TimelineNode";
 
 interface TimelineProps {
   milestones: MilestoneType[];
@@ -45,11 +45,11 @@ export default function Timeline({ milestones }: TimelineProps) {
         {/* MAIN TIMELINE SECTION - Node + Milestones with continuous thin line */}
         <div className="relative">
           {/* First Year Node - Separate from main timeline */}
-          {/* {years[0] && (
+          {years[0] && (
             <div className="mb-8 md:mb-12">
               <TimelineNode year={years[0]} />
             </div>
-          )} */}
+          )}
 
           {/* Thin continuous timeline line - Desktop (starts after first node gap) */}
           <div 
@@ -64,10 +64,10 @@ export default function Timeline({ milestones }: TimelineProps) {
           />
 
           {/* All years with milestones */}
-          {years.map((year) => (
+          {years.map((year, yearIndex) => (
             <div key={year} className="mb-16 md:mb-24">
               {/* Year Node - Skip first one since we rendered it above */}
-              {/* {yearIndex > 0 && <TimelineNode year={year} />} */}
+              {yearIndex > 0 && <TimelineNode year={year} />}
 
               {/* Milestones for this year */}
               <div className="space-y-8">
