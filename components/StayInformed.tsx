@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { articles } from "@/data/Milestones";
 import { useInView } from "@/hooks/useInView";
 
@@ -43,11 +44,11 @@ export default function StayInformed() {
                                     <div className="flex items-center justify-center gap-4 mb-6">
                                         {/* Asido Logo */}
                                         <div className="w-10 h-4 flex items-center justify-center">
-                                            <img src="/images/asido-logo.png" alt="Asido Foundation Logo" />
+                                            <Image src="/images/asido-logo.png" alt="Asido Foundation Logo" />
                                         </div>
                                         {/* Ayuri Logo */}
                                         <div className="w-10 h-4 flex items-center justify-center">
-                                            <img src="/images/ayuri-logo.png" alt="Ayuri Logo" />
+                                            <Image src="/images/ayuri-logo.png" alt="Ayuri Logo" />
                                         </div>
                                     </div>
 
@@ -79,7 +80,7 @@ export default function StayInformed() {
                                             ></div>
                                             {/* Doctor's image */}
                                             <div className="absolute inset-0 rounded-lg transform overflow-hidden bg-gray-200">
-                                                <img src="/images/dr-jubril.png" alt="Dr. Jibril" className="w-full h-full object-cover" />
+                                                <Image src="/images/dr-jubril.png" alt="Dr. Jibril" className="w-full h-full object-cover" />
                                             </div>
                                         </div>
                                     </div>
