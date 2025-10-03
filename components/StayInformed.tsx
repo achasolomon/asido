@@ -44,11 +44,21 @@ export default function StayInformed() {
                                     <div className="flex items-center justify-center gap-4 mb-6">
                                         {/* Asido Logo */}
                                         <div className="w-10 h-4 flex items-center justify-center">
-                                            <Image src="/images/asido-logo.png" alt="Asido Foundation Logo" />
+                                            <Image 
+                                                src="/images/asido-logo.png" 
+                                                alt="Asido Foundation Logo" 
+                                                width={40} 
+                                                height={16} 
+                                            />
                                         </div>
                                         {/* Ayuri Logo */}
                                         <div className="w-10 h-4 flex items-center justify-center">
-                                            <Image src="/images/ayuri-logo.png" alt="Ayuri Logo" />
+                                            <Image 
+                                                src="/images/ayuri-logo.png" 
+                                                alt="Ayuri Logo" 
+                                                width={40} 
+                                                height={16} 
+                                            />
                                         </div>
                                     </div>
 
@@ -70,7 +80,7 @@ export default function StayInformed() {
                                         </p>
                                     </div>
 
-                                    {/* Doctor's Image - Right Side */}
+                                    {/* Doctor&apos;s Image - Right Side */}
                                     <div className="absolute bottom-10 right-4">
                                         <div className="relative w-32 h-32">
                                             {/* Background shape */}
@@ -78,9 +88,15 @@ export default function StayInformed() {
                                                 className="absolute inset-0 rounded-lg transform rotate-15"
                                                 style={{ backgroundColor: article.color }}
                                             ></div>
-                                            {/* Doctor's image */}
+                                            {/* Doctor&apos;s image */}
                                             <div className="absolute inset-0 rounded-lg transform overflow-hidden bg-gray-200">
-                                                <Image src="/images/dr-jubril.png" alt="Dr. Jibril" className="w-full h-full object-cover" />
+                                                <Image 
+                                                    src="/images/dr-jubril.png" 
+                                                    alt="Dr. Jibril" 
+                                                    width={128} 
+                                                    height={128} 
+                                                    className="w-full h-full object-cover" 
+                                                />
                                             </div>
                                         </div>
                                     </div>
