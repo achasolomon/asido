@@ -45,7 +45,7 @@ export default function StayInformed() {
                                         {/* Asido Logo */}
                                         <div className="w-8 h-3 lg:w-10 lg:h-4 flex items-center justify-center">
                                             <Image 
-                                                src="/images/asido-logo.png" 
+                                                src="/images/Asido-logo.png" 
                                                 alt="Asido Foundation Logo" 
                                                 width={40} 
                                                 height={16} 

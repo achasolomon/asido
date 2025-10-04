@@ -91,7 +91,7 @@ export const milestones: Milestone[] = [
     year: 2021,
     title: "Inaugural JANE Competition",
     description: "Empowering youth through mental health-themed creativity and advocacy.",
-    image: "/images/inaugural-jane.jpg",
+    image: "/images/inaugural-Jane.jpg",
     imageHeight: 400,
     color: "green",
     position: "left",
