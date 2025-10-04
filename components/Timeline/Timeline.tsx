@@ -31,7 +31,7 @@ export default function Timeline({ milestones }: TimelineProps) {
     .sort((a, b) => a - b);
 
   return (
-    <div className="relative pt-32 pb-24 px-4 md:px-8 bg-background">
+    <div className="relative pt-32 pb-24 px-4 md:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
         
         {/* INTRODUCTORY LINE - Standalone, thick, bold */}

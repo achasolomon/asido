@@ -18,10 +18,11 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="max-w-[1440px] mx-auto px-20">
         {/* Top Row: Logo and Search */}
+        {/* Top Row: Logo and Search */}
         <div className="flex items-center justify-between pt-5 pb-4">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="w-[140px] h-[48px] relative">
+            <div className="w-[80px] h-[28px] lg:w-[140px] lg:h-[48px] relative">
               <Image
                 src="/images/Asido-logo.png"
                 alt="Asido Foundation"
@@ -32,55 +33,58 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Search Icon with blue border */}
-          <button 
-            className="p-2 border border-primary rounded-full hover:bg-primary/5 transition-colors"
-            aria-label="Search"
-          >
-            <svg
-              className="w-5 h-5 text-primary"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Right side: Search and Mobile Menu */}
+          <div className="flex items-center gap-3">
+            {/* Search Icon with blue border */}
+            <button 
+              className="p-2 border border-primary rounded-full hover:bg-primary/5 transition-colors"
+              aria-label="Search"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
+              <svg
+                className="w-5 h-5 text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 hover:bg-gray-100 rounded-md"
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-2 hover:bg-gray-100 rounded-md"
+              aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {mobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Bottom Row: Navigation Links */}

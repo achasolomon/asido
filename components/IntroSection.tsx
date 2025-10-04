@@ -7,7 +7,7 @@ export default function IntroSection() {
   const { ref, isInView } = useInView({ threshold: 0.3, triggerOnce: true });
 
   return (
-    <section ref={ref} className="py-[200px] px-20 bg-white">
+    <section ref={ref} className="py-16 lg:py-[200px] px-4 lg:px-20 bg-white">
       <div className="max-w-[1280px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -16,10 +16,9 @@ export default function IntroSection() {
           className="text-center"
         >
           <h1 
-            className="font-bold text-center text-"
+            className="font-bold text-center text-[18px] lg:text-[30px]"
             style={{
               fontFamily: 'Plus Jakarta Sans',
-              fontSize: '30px',
               fontWeight: 700,
               lineHeight: '130%',
               color: '#202124'

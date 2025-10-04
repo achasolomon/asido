@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[540px] overflow-hidden">
+    <section className="relative w-full h-[180px] lg:h-[540px] overflow-hidden">
       <Image
         src="/images/hero.png"
         alt="Asido Foundation Team"
         fill
-        className="object-cover"
+        className="object-cover object-center"
         priority
         sizes="100vw"
       />
