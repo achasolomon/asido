@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="max-w-[1440px] mx-auto px-20">
-        {/* Top Row: Logo and Search */}
+
         {/* Top Row: Logo and Search */}
         <div className="flex items-center justify-between pt-5 pb-4">
           {/* Logo */}
@@ -34,7 +34,7 @@ export default function Header() {
           </Link>
 
           {/* Right side: Search and Mobile Menu */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-between gap-3">
             {/* Search Icon with blue border */}
             <button 
               className="p-2 border border-primary rounded-full hover:bg-primary/5 transition-colors"
