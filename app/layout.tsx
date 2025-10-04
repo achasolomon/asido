@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Asido Foundation - Milestones",
   description: "Timeline of Asido Foundation's mental health advocacy journey since 2019",
    icons: {
-    icon: "/images/asido-logo.png", 
+    icon: "/images/Asido-logo.png", 
   },
 };  
 
@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${plusJakarta.variable} font-sans antialiased`}>
+      <body className={`${plusJakarta.variable} antialiased`}>
         {children}
       </body>
     </html>
